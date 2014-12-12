@@ -1,13 +1,17 @@
-helloworld
-==========
+# helloworld
 
 Helloworld example.
 
-Build:
+### Build:
+```
 	mvn clean package
-	
-Run:
+```
+
+### Run:
+```
 	mvn exec:java -Dexec.mainClass="org.homelinux.slivonja.App"
-	
+```	
 	Run within test phase
+```	
 	mvn test
+```
