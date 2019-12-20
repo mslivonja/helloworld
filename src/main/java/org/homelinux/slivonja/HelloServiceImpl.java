@@ -6,7 +6,13 @@ public class HelloServiceImpl implements HelloService{
 
     @Override
     public String sayHello(String name) {
-        String value = isEmpty(name)?"World":name;
+        String value = name;
+
+        if(name==null)
+            value = "...";
+        else if(isEmpty(name))
+            value = "World";
+
         return "Hello " + value + "!";
     }
 }

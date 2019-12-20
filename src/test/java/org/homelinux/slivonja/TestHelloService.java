@@ -16,6 +16,10 @@ public class TestHelloService {
     }
 
     @Test
+    public void testNullHello(){
+        assertThat(service.sayHello(null), is(equalTo("Hello ...!")));
+    }
+
     public void testEmptyHello(){
         assertThat(service.sayHello(null), is(equalTo("Hello World!")));
     }
